@@ -1,0 +1,8 @@
+name: Student 1 DevSecOps Pipeline
+on: [push]
+jobs:
+  run-sca:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./mvnw verify
